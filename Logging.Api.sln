@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging.Api", "Logging.Api\Logging.Api.csproj", "{908A0010-440C-4BC2-8723-183C32DACABA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging.Api", "src\Logging.Api\Logging.Api.csproj", "{908A0010-440C-4BC2-8723-183C32DACABA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C874F116-1C47-42DA-A735-C8D2E2979E9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +20,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{908A0010-440C-4BC2-8723-183C32DACABA} = {C874F116-1C47-42DA-A735-C8D2E2979E9D}
 	EndGlobalSection
 EndGlobal
