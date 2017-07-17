@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  logging:
+    build: .
+    image: logging
+    container_name: logging
+    volumes:
+      - ./:/logging/data
+    env_file:
+      - .env.${SERVERLESS_ENV}
+    networks:
+      - dev
+
+networks:
+  dev:
+    driver: bridge
